@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lente DIA · Manuel Belgrano</title>
+<meta name="description" content="Enfocá la lámina de Manuel Belgrano con la Lente DIA de IA al Colorado y mirá a su humano digital hablando.">
+<!-- El compilador de MindAR se carga primero y se guarda antes de que el build de A-Frame lo pise -->
+<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image.prod.js"></script>
+<script>window.MindCompiler=(window.MINDAR&&window.MINDAR.IMAGE&&window.MINDAR.IMAGE.Compiler)||null;</script>
+<script src="https://cdn.jsdelivr.net/npm/aframe@1.5.0/dist/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="start">
+  <h1>Lente DIA</h1>
+  <p>Enfocá la lámina de <b>Manuel Belgrano</b> con la cámara de tu celular y mirá a su humano digital hablando.</p>
+  <button id="go">Activar cámara</button>
+  <div id="msg" role="status" aria-live="polite"></div>
+  <small>Recreación digital educativa de IA al Colorado. Necesitás permitir la cámara. La imagen de la cámara se procesa en tu dispositivo.</small>
+</div>
+
+<div id="host"></div>
+<div id="scan"><span>Apuntá a la lámina completa</span></div>
+<div id="plate"><b>Manuel Belgrano</b><span id="plateTxt">Recreación digital educativa · IA al Colorado</span></div>
+
+<script src="app.js"></script>
+</body>
+</html>
